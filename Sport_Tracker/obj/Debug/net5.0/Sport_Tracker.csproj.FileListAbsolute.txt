@@ -1,0 +1,16 @@
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\Sport_Tracker.exe
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\Sport_Tracker.deps.json
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\Sport_Tracker.runtimeconfig.json
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\Sport_Tracker.runtimeconfig.dev.json
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\Sport_Tracker.dll
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\ref\Sport_Tracker.dll
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\bin\Debug\net5.0\Sport_Tracker.pdb
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.csprojAssemblyReference.cache
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.AssemblyInfoInputs.cache
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.AssemblyInfo.cs
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.csproj.CoreCompileInputs.cache
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.dll
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\ref\Sport_Tracker.dll
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.pdb
+D:\Private\05_Personal project\01_Logiciel-sport\02_Dev\Sport_Tracker\Sport_Tracker\obj\Debug\net5.0\Sport_Tracker.genruntimeconfig.cache

@@ -8,9 +8,13 @@ namespace Sport_Tracker
 {
     class User
     {
-        public string name { get; set; }
-        public float weight { get; set; }
-        public DateTime date { get; set; }
+        public List<Measurement> Measurements { get; set; } = new List<Measurement>();
+
+        public void AddWeight(float weight, DateTime date)
+        {
+            var newWeight = new Measurement(weight, date);
+            Measurements.Add(newWeight); 
+        }
 
         public User()
         {

@@ -4,30 +4,46 @@ namespace Sport_Tracker
 {
     class Program
     {
+        static User User1;
         static void Main(string[] args)
         {
             Console.WriteLine("       Yo!!!");
             Console.WriteLine(string.Empty);
-            Console.WriteLine("Quel est ton nom ? ");
-            Console.WriteLine(string.Empty);
-            string inputname = Console.ReadLine();
-            Console.WriteLine(string.Empty);
-            Console.WriteLine("Quel est ton poids ? ");
-            Console.WriteLine(string.Empty);
-            float inputweight = float.Parse(Console.ReadLine());
-            Console.WriteLine(string.Empty);
-            var User = new User
+            var wantToQuit = false;
+            User1 = new User();
+
+            //  We display application's menu
+
+            while (!wantToQuit)
             {
-                name = inputname,
-                weight = inputweight,
-                date = DateTime.Today
-            };
-            Console.WriteLine(value: User.name);
+                HomeMenu();
+            }
+        }
+
+        static void HomeMenu()
+        {
+            Console.WriteLine("1 - Poids");
+            Console.WriteLine("2 - Historique");
             Console.WriteLine(string.Empty);
-            Console.WriteLine(string.Empty);
-            Console.WriteLine(value: User.date.ToString("d"));
-            Console.WriteLine(string.Empty);
-            Console.WriteLine(value: User.weight);
+            int inputchoice = int.Parse(Console.ReadLine());
+            
+
+            if (inputchoice == 1)
+            {
+                Console.WriteLine(string.Empty);
+                Console.WriteLine("Quel est ton poids ? ");
+                Console.WriteLine(string.Empty);
+                float inputweight = float.Parse(Console.ReadLine());
+                Console.WriteLine(string.Empty);
+                User1.AddWeight(inputweight, DateTime.Today);
+
+            } else if (inputchoice == 2)
+            {
+                foreach (var Measurement in User1.Measurements)
+                {
+                    Console.WriteLine($"{Measurement.ToString()}");
+                }
+            }
         }
     }
 }

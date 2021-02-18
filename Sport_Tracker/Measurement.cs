@@ -14,11 +14,5 @@ namespace Sport_Tracker
         {
             Weight = newWeight;
         }
-
-        /*public override string ToString()
-        {
-            return $"{Weight}kg le {DateWeight.ToString("d")}";
-        }*/
-
     }
 }

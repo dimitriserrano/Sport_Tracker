@@ -12,8 +12,32 @@ namespace Sport_Tracker
         /*Function implements the list measurements*/
         public void AddWeight(float weight)
         {
-            string fileName = @"D:\test.txt";
+            string fileName = @"D:\Weight.txt";
             FileStream stream = null;
+            if (!File.Exists(fileName))
+            {
+                try
+                {
+                    // Create a FileStream with mode CreateNew  
+                    stream = new FileStream(fileName, FileMode.Create);
+                    // Create a StreamWriter from FileStream  
+                    using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
+                    {
+                        writer.Write("Le ");
+                        writer.Write(DateTime.Today.ToString("d"));
+                        writer.Write(" : ");
+                        writer.Write(weight);
+                        writer.Write("kg");
+                        writer.WriteLine(string.Empty);
+
+                    }
+                }
+                finally
+                {
+                    if (stream != null)
+                        stream.Dispose();
+                }
+            }else
             try
             {
                 // Create a FileStream with mode CreateNew  
@@ -21,10 +45,13 @@ namespace Sport_Tracker
                 // Create a StreamWriter from FileStream  
                 using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
                 {
-                    writer.Write(weight);
-                    writer.Write(" ");
+                    writer.Write("Le ");
                     writer.Write(DateTime.Today.ToString("d"));
-                    writer.WriteLine(" ");
+                    writer.Write(" : ");
+                    writer.Write(weight);
+                    writer.Write("kg");
+                    writer.WriteLine(string.Empty);
+
                 }
             }
             finally
@@ -32,35 +59,25 @@ namespace Sport_Tracker
                 if (stream != null)
                     stream.Dispose();
             }
-            // Read a file  
-            string readText = File.ReadAllText(fileName);
-            Console.WriteLine(readText);
-            Console.ReadKey();
         }
 
-        public void WriteWeight(List<Measurement> Measurements)
+        public void ReadWeight()
         {
-            string fileName = @"D:\test.txt";
-            FileStream stream = null;
+            string fileName = @"D:\Weight.txt";
+            // Read a file  
+            StreamReader sr = null;
             try
             {
-                // Create a FileStream with mode CreateNew  
-                stream = new FileStream(fileName, FileMode.Append);
-                // Create a StreamWriter from FileStream  
-                using (StreamWriter writer = new StreamWriter(stream, Encoding.UTF8))
-                {
-                    writer.WriteLine(Measurements[0]);
-                }
+                sr = new StreamReader(fileName);
+                string mots = sr.ReadToEnd();
+                Console.WriteLine(string.Empty);
+                Console.WriteLine(mots);
             }
             finally
             {
-                if (stream != null)
-                    stream.Dispose();
-            }
-            // Read a file  
-            string readText = File.ReadAllText(fileName);
-            Console.WriteLine(readText);
-            Console.ReadKey();
+                if (sr != null)
+                    sr.Dispose();
+            }   
         }
 
         public User()

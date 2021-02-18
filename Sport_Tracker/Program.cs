@@ -35,14 +35,14 @@ namespace Sport_Tracker
                 Console.WriteLine(string.Empty);
                 float inputweight = float.Parse(Console.ReadLine());
                 Console.WriteLine(string.Empty);
-                User1.AddWeight(inputweight, DateTime.Today);
+                User1.AddWeight(inputweight);
 
-            } else if (inputchoice == 2)
+            }
+            else if (inputchoice == 2)
             {
-                foreach (var Measurement in User1.Measurements)
-                {
-                    Console.WriteLine($"{Measurement.ToString()}");
-                }
+                Console.WriteLine(string.Empty);
+                Console.WriteLine("Votre historique de poids");
+                User1.ReadWeight();
             }
         }
     }
